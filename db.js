@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 const MongoClient = require('mongodb').MongoClient;
 
-const uri = process.env.MONGOLAB_URI || "mongodb+srv://admin:jju76fas@cluster0-2qpjx.mongodb.net/test?retryWrites=true&w=majority";
+const uri = process.env.MONGOLAB_URI
 const client = new MongoClient(uri, { useNewUrlParser: true });
 
 mongoose.connect(uri, {
