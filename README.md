@@ -1,2 +1,2 @@
 # dndspells
-nodejs with mongodb restapi for dndspells
+mern stack backend for dndspellsfrontend
