@@ -4,7 +4,7 @@ FROM node:10
 
 WORKDIR /source/dndspells
 
-COPY package*.json /source/dndspells
+COPY package*.json /source/dndspells/
 
 RUN npm install
 
