@@ -1,4 +1,6 @@
-let http = require('http'),
+const express = require('express')
+const app = express()
+
  
 // look for PORT environment variable, 
 // else look for CLI argument,
@@ -6,19 +8,6 @@ let http = require('http'),
 port = process.env.PORT || process.argv[2] || 8080;
  
 // create a simple server
-let server = http.createServer(function (req, res) {
- 
-        res.writeHead(200, {
-            'Content-Type': 'text/plain'
-        });
-        res.write('hello heroku!', 'utf-8');
-        res.end();
- 
-    });
- 
-// listen on the port
-server.listen(port, function () {
- 
-    console.log('app up on port: ' + port);
- 
-});
+app.get('/', (req, res) => res.send('Hello World!'))
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
