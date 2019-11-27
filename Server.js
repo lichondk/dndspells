@@ -6,5 +6,6 @@ const port = process.env.PORT || process.argv[2] || 8080;
 app.use('/spells', rout);
 
 app.get('/', (req, res) => res.send('hello world!'))
+app.get('/test', (req, res) => res.semd('test'))
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
