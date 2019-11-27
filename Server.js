@@ -4,7 +4,7 @@ const app = express();
 const port = process.env.PORT || process.argv[2] || 8080;
 
 app.use('/spells', (req, res) => {
-    Spells.findOne({name: "aid"}).then(function(data){
+    Spells.find().then(function(data){
         res.send(data)
       });
 });
