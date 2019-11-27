@@ -9,6 +9,7 @@
   },
   "author": "",
   "license": "ISC",
+  "homepage":"https://git.heroku.com/dnddev.git",
     "dependencies": {
     "cowsay": "^1.4.0"
   }
