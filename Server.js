@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || process.argv[2] || 8080;
 
 app.use(cors({
-  origin: 'https://dnddevfrontend.herokuapp.com/'
+  origin: 'https://dnddevfrontend.herokuapp.com'
 }));
 
 app.get('/spells', (req, res) => {
